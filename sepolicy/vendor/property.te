@@ -10,5 +10,6 @@ type vendor_device_prop, property_type;
 # Power
 type power_prop, property_type;
 
-# Thermal
+# Pixel Thermal
 type vendor_thermal_engine_prop, property_type;
+type vendor_thermal_prop, property_type;
