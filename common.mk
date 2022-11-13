@@ -78,7 +78,9 @@ RELAX_USES_LIBRARY_CHECK := true
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor
+    libgui_vendor \
+    ApertureOverlay \
+    ApertureDevOverlay
 
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
