@@ -101,6 +101,12 @@ on post-fs-data
     mkdir /data/vendor/mac_addr 0771 system system
 
 	mkdir /data/vendor/wlan_logs 0770 system wifi
+
+# Health
+on boot
+    chmod 0660 /sys/class/power_supply/battery/input_suspend
+    chown system system /sys/class/power_supply/battery/input_suspend
+
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
 on boot
@@ -128,14 +134,6 @@ on boot
     # set default schedTune value for camera-daemon
     write /dev/stune/camera-daemon/schedtune.prefer_idle 1
     write /dev/stune/camera-daemon/schedtune.boost 0
-
-#add runin factory charging test
-    chmod 0777 /sys/class/power_supply/battery/input_suspend
-    chmod 0777 /sys/class/power_supply/battery/charging_enabled
-    chmod 0777 /sys/class/power_supply/usb/typec_cc_orientation
-    chown system system /sys/class/power_supply/battery/input_suspend
-    chown system system /sys/class/power_supply/battery/charging_enabled
-    chown system system /sys/class/power_supply/usb/typec_cc_orientation
 
     chmod 0666 sys/devices/platform/soc/890000.i2c/i2c-1/1-005a/cali
     chmod 0666 sys/devices/platform/soc/890000.i2c/i2c-1/1-005a/cali_save
@@ -239,13 +237,6 @@ on property:vendor.display.lcd_density=160
 ## import cne init file
 #on post-fs
 #    export LD_PRELOAD /vendor/lib/libNimsWrap.so
-#
-## Allow usb charging to be disabled peristently
-#on property:persist.usb.chgdisabled=1
-#    write /sys/class/power_supply/battery/charging_enabled 0
-#
-#on property:persist.usb.chgdisabled=0
-#    write /sys/class/power_supply/battery/charging_enabled 1
 
 # QR_code feature
 service nv_mac /vendor/bin/nv_mac
