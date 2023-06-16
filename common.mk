@@ -80,9 +80,7 @@ RELAX_USES_LIBRARY_CHECK := true
 
 # Camera
 PRODUCT_PACKAGES += \
-    libgui_vendor \
-    ApertureOverlay \
-    ApertureDevOverlay
+    libgui_vendor
 
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
@@ -319,6 +317,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
 PRODUCT_PACKAGES += \
+   ApertureOverlay \
+   ApertureDevOverlay \
    CarrierConfigOverlay \
    DialerOverlay \
    MiatollFrameworks \
