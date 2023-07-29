@@ -510,10 +510,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# XiaomiDoze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
