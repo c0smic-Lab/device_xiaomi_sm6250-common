@@ -751,9 +751,6 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
-    <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent">org.lineageos.aperture/.QrScannerActivity</string>
-     
     <!-- Update battery info every second when device is charging -->
     <bool name="config_alternateFastchargeInfoUpdate">true</bool>
 
