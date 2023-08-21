@@ -751,9 +751,6 @@
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
 
-    <!-- Boost Framework -->
-    <bool name="config_supportsBoostFramework">true</bool>
-
     <!-- Default component for QR code scanner -->
     <string name="config_defaultQrCodeComponent">org.lineageos.aperture/.QrScannerActivity</string>
      
