@@ -812,7 +812,4 @@
     <!-- Doze: should the TYPE_PICK_UP_GESTURE sensor be used as a pulse signal. -->
     <bool name="config_dozePulsePickup">true</bool>
 
-    <!-- Default values for LiveDisplay -->
-    <bool name="config_enableLiveDisplay">false</bool>
-
 </resources>
