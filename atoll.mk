@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2023 The LineageOS Project
+# Copyright (C) 2021-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -127,6 +127,9 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi
+
+PRODUCT_PACKAGES += \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # FM
 PRODUCT_PACKAGES += \
