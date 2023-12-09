@@ -95,7 +95,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.atoll \
     libdisplayconfig.system.qti \
     libqdMetaData.system \
-    libtinyxml \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
