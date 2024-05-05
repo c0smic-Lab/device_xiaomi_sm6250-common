@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 The LineageOS Project
+// Copyright (C) 2022, 2024 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
@@ -8,6 +8,12 @@
 sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "bin/init.qcom.early_boot.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.qcom.post_boot-atoll.sh",
+    src: "bin/init.qcom.post_boot-atoll.sh",
     vendor: true,
 }
 
@@ -37,13 +43,6 @@ prebuilt_etc {
 }
 
 // Init configuration files
-prebuilt_etc {
-    name: "init.qcom.power.rc",
-    src: "etc/init.qcom.power.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 prebuilt_etc {
     name: "init.qcom.rc",
     src: "etc/init.qcom.rc",
