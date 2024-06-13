@@ -73,6 +73,9 @@ PRODUCT_PACKAGES += \
     libmegface \
     libpiex_shim
 
+PRODUCT_PACKAGES += \
+    libpng.vendor
+
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
@@ -326,6 +329,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
+
+PRODUCT_PACKAGES += \
+    libsqlite.vendor
 
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
