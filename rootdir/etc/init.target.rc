@@ -27,6 +27,9 @@
 #
 #
 
+on early-init
+    setprop vendor.usb.product_string ${ro.product.vendor.model}
+
 on init
     # Uclamp tuning
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 96
