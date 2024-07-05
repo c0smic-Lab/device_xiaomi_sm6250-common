@@ -5,6 +5,15 @@
 -->
 <resources>
 
+    <!-- The padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">8dp</dimen>
+
+    <!-- The padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">0dp</dimen>
+
+    <!-- The padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">1dp</dimen>
+
     <!-- Location on the screen of the center of the fingerprint sensor. -->
     <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
     <dimen name="physical_fingerprint_sensor_center_screen_location_y">760px</dimen>
