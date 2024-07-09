@@ -35,16 +35,10 @@ function configure_zram_parameters() {
 	MemTotalStr=`cat /proc/meminfo | grep MemTotal`
 	MemTotal=${MemTotalStr:16:8}
 
-	# Zram disk - 75% for < 2GB devices.
-	# For >2GB devices, size = 50% of RAM size. Limit the size to 4GB.
-
+	# Zram disk - 50% of RAM size with limit set to 4GB.
 	let RamSizeGB="( $MemTotal / 1048576 ) + 1"
+	let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
 	diskSizeUnit=M
-	if [ $RamSizeGB -le 2 ]; then
-		let zRamSizeMB="( $RamSizeGB * 1024 ) * 3 / 4"
-	else
-		let zRamSizeMB="( $RamSizeGB * 1024 ) / 2"
-	fi
 
 	# use MB avoid 32 bit overflow
 	if [ $zRamSizeMB -gt 4096 ]; then
