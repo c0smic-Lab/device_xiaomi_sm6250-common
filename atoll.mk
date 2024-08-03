@@ -150,7 +150,8 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libutils.vendor
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
