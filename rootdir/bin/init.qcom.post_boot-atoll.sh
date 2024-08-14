@@ -213,11 +213,6 @@ echo 4-5 > /dev/cpuset/background/cpus
 echo 2-5 > /dev/cpuset/system-background/cpus
 echo 2-5 > /dev/cpuset/restricted/cpus
 
-# schedtune parameters
-echo 1 > /dev/stune/foreground/schedtune.prefer_idle
-echo 1 > /dev/stune/top-app/schedtune.prefer_idle
-echo 5 > /dev/stune/top-app/schedtune.boost
-
 # EAS
 echo 95 > /proc/sys/kernel/sched_upmigrate
 echo 85 > /proc/sys/kernel/sched_downmigrate
