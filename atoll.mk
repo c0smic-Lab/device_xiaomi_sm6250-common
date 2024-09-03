@@ -202,10 +202,10 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
-    $(LOCAL_PATH)/media/media_codecs_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
-    $(LOCAL_PATH)/media/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+PRODUCT_PACKAGES += \
+    media_codecs_performance.xml \
+    media_codecs.xml \
+    media_profiles_V1_0.xml
 
 PRODUCT_COPY_FILES += \
     hardware/qcom-caf/sm8150/media/conf_files/atoll/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
