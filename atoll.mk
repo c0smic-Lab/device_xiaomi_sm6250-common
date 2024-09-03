@@ -48,8 +48,14 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     sound_trigger.primary.atoll:32
 
-PRODUCT_COPY_FILES += \
-     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
+PRODUCT_PACKAGES += \
+    audio_effects.xml \
+    audio_io_policy.conf \
+    audio_platform_info_intcodec.xml \
+    audio_policy_configuration.xml \
+    mixer_paths_wcd937x.xml \
+    sound_trigger_mixer_paths.xml \
+    sound_trigger_platform_info.xml
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
