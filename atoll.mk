@@ -154,20 +154,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
     media_codecs_performance_c2.xml \
-    media_codecs_performance.xml \
-    media_codecs.xml \
     media_profiles_V1_0.xml
-
-PRODUCT_COPY_FILES += \
-    hardware/qcom-caf/sm8150/media/conf_files/atoll/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    hardware/qcom-caf/sm8150/media/conf_files/atoll/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml
-
-# OMX
-PRODUCT_PACKAGES += \
-    libOmxCore \
-    libOmxVdec \
-    libOmxVenc \
-    libstagefrighthw
 
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *

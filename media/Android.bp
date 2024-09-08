@@ -17,18 +17,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "media_codecs_performance.xml",
-    src: "media_codecs_performance.xml",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "media_codecs.xml",
-    src: "media_codecs_vendor.xml",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "media_profiles_V1_0.xml",
     src: "media_profiles.xml",
     vendor: true,
