@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
 
+# Media
 PRODUCT_PACKAGES += \
     media_codecs_performance.xml \
     media_codecs.xml \
