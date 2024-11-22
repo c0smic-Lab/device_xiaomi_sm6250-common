@@ -72,12 +72,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/hw/fingerprint.fpc.default.so': blob_fixup()
         .sig_replace('30 00 00 90 11 3a 42 f9', '30 00 00 90 1f 20 03 d5'),
     'vendor/lib64/hw/fingerprint.goodix.default.so': blob_fixup()
-        .patchelf_version('0_17_2')
         .fix_soname(),
     'vendor/lib64/android.hardware.camera.provider@2.4-legacy.so': blob_fixup()
         .add_needed('libcamera_provider_shim.so'),
     'vendor/lib64/libgoodixhwfingerprint.so': blob_fixup()
-        .patchelf_version('0_17_2')
         .replace_needed('libvendor.goodix.hardware.biometrics.fingerprint@2.1.so', 'vendor.goodix.hardware.biometrics.fingerprint@2.1.so'),
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
