@@ -760,7 +760,7 @@ vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xm
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 vendor/lib64/libhexagon_nn_stub.so
 vendor/lib64/libhta_hexagon_runtime.so
-vendor/lib64/libhvx_interface.so;DISABLE_CHECKELF
+vendor/lib64/libhvx_interface.so
 vendor/lib64/libnpu.so
 vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
