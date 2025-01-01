@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021-2024 The LineageOS Project
+# Copyright (C) 2021-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -48,13 +48,6 @@ TARGET_DISABLED_UBWC := true
 
 # Display
 TARGET_SCREEN_DENSITY := 440
-TARGET_USES_COLOR_METADATA := true
-TARGET_USES_DISPLAY_RENDER_INTENTS := true
-TARGET_USES_DRM_PP := true
-TARGET_USES_GRALLOC1 := true
-TARGET_USES_GRALLOC4 := true
-TARGET_USES_HWC2 := true
-TARGET_USES_ION := true
 
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
@@ -107,6 +100,9 @@ BOARD_KERNEL_CMDLINE += swiotlb=1
 
 # Lineage Health
 TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+
+# Media
+TARGET_USES_ION := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
