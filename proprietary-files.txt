@@ -1,5 +1,4 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
-# moonstone: OS1.0.5.0.UMPMIXM (MOONSTONEGlobal)
 # sunstone: OS1.0.9.0.UMQMIXM (SUNSTONEGlobal)
 # vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
@@ -1047,7 +1046,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 # WiFi
 vendor/bin/cnss-daemon
 
-# WiFi Display (system) - from moonstone
+# WiFi Display (system) - from sunstone
 system/framework/WfdCommon.jar;BOOT_JAR|08bf9850ac45396fe753e208c4d63ec43389dce2
 system_ext/bin/wfdservice64|77de5e319297d09b29712160ed0a9dbdced58911
 system_ext/etc/init/wfdservice.rc|3dfd29a44f37c971b7707b6e47b2b601a9119d12
@@ -1055,18 +1054,18 @@ system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|10dcd4e58f
 system_ext/etc/seccomp_policy/wfdservice64.policy|1e331272649395423b11c575892e0bdc9433b820
 system_ext/etc/wfdconfigsink.xml|cb78df66948314a75080a4161321fb3111a0785a
 system_ext/lib64/libmmosal.so|a1a2875522a7b4daf346bf26c66bcbc793c8810b
-system_ext/lib64/libmmparser_lite.so|f4ceee2ec480bbfa55e76412a0fb19e6e38fbe9f
+system_ext/lib64/libmmparser_lite.so|afd7b441e1bce732c14f5f8f49821d43bb2ee791
 system_ext/lib64/libmmrtpdecoder.so|0da526d51135ea58236ab6bcc2d1b7484931df24
 system_ext/lib64/libmmrtpencoder.so|fafe00d1ed3d691c6d2c2d963144218764cad5ae
 system_ext/lib64/libwfdavenhancements.so|9c763b45dd5fe7c52fad420a21d215b31c5e34d5
 system_ext/lib64/libwfdclient.so|0070b1e88cee6ebaf17dcb02c2706232cc087071
 system_ext/lib64/libwfdcommonutils.so|14b3bd86703f2aca0abb1232d2304e626c1af644
-system_ext/lib64/libwfdconfigutils.so|ea96ed22dbb0e89dafee42829015acf95f9a17e1
+system_ext/lib64/libwfdconfigutils.so|ce60fa01bfb684bb8d993f57edb7854c86fa6003
 system_ext/lib64/libwfddisplayconfig.so|5fd7bf7abaedfe890442f88183c49755b25c39aa
 system_ext/lib64/libwfdmminterface.so|3f16acefbe87741a5841c1c70cf74ff917299c4c
 system_ext/lib64/libwfdmmsink.so|8150b750357b606475521b491f78d566673f9888
-system_ext/lib64/libwfdmmsrc_system.so|658823365c8c7ffeca808b0dd570380b415ea658
-system_ext/lib64/libwfdnative.so|88a1537990071df6016c98d43029a5bad750d4c2
+system_ext/lib64/libwfdmmsrc_system.so|12efaad1a3614fe13969ebf4e15d1b405b11a0a5
+system_ext/lib64/libwfdnative.so|46502f605a405b92fa6e6a440dfffc1e8ddd89ac
 system_ext/lib64/libwfdrtsp.so|8181e44d7c1f722218fabd8fe3bf788454a3f586
 system_ext/lib64/libwfdservice.so|f4de65898c6e495f0be49212ac90ab20515b69c9
 system_ext/lib64/libwfdsinksm.so|c4d68ecbe0accd24296c18444e5a82b6a24be8d8
