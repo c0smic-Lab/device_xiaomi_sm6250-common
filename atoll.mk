@@ -113,16 +113,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# Input
-PRODUCT_PACKAGES += \
-    uinput-fpc.idc \
-    uinput-goodix.idc
-
-PRODUCT_PACKAGES += \
-    gpio-keys.kl \
-    uinput-fpc.kl \
-    uinput-goodix.kl
-
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
