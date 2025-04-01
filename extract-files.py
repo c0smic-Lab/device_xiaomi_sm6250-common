@@ -46,6 +46,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/bin/wfdservice64': blob_fixup()
+        .add_needed('libwfdservice_shim.so'),
     'system_ext/etc/init/wfdservice.rc': blob_fixup()
         .regex_replace('(start|stop) wfdservice\n', '\\1 wfdservice64\n'),
     'system_ext/lib64/libwfdmmsrc_system.so': blob_fixup()
